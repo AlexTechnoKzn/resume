@@ -6,79 +6,122 @@
     <meta name="keywords" content="resume,cv,Alexandr">
     <meta name="description" content="Это резюме by Alexandr Ch для работы в IT">
     <title>Alexandr resume</title>
+    <link rel="stylesheet" href="style_resume.css">
 </head>
 <body>
 
-<img src="Аватарка.jpg" alt="Здесь фотография Александра" 
-width="150">
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#Список социальных сетей">Социальные сети</a></li>
+        <li><a href="#Хобби">Хобби</a></li>
+        <li><a href="#Опыт работы">Опыт работы</a></li>
+        <li><a href="#Опыт работы">образование</a></li>
+        <li><a href="#Способы связи">Способы связи</a></li>
+    </ul>
+ </nav>   
+
+<div class="container">
+
+    <div class="info">
+    <img src="imgs/Аватарка.jpg" alt="Здесь фотография Александра" class="avatar">
+
+    <div class="info-text">
 
     <h1>Чуйков Александр</h1>
-<p>Я работаю <strong>мастером инноваций</strong> в компании <strong>"ТЕХНОПАРК"</strong></p>
-<p>Я люблю <em>собак и катаюсь на сноуборде.</em></p>
+    <p>Я работаю <strong>мастером инноваций</strong> в компании <strong>"ТЕХНОПАРК"</strong></p>
+    <p>Я люблю <em>собак и катаюсь на сноуборде.</em></p>
 
-<h4><strong>Список социальный сетей</strong></h4>
-<a href="https://vk.com/noclafsake" target="_blank">Вконтакте</a> <strong>|</strong>
+    <h4 id="Список социальных сетей"><strong>Список социальный сетей</strong></h4>
+    <a href="https://vk.com/noclafsake" target="_blank">Вконтакте</a> <strong>|</strong>
 
-<a href="https://t.me/noclafsake" target="_blank">Telegram</a>
-
-<h2>Мои хобби</h2>
-<ol>
-    <li>Путешествия</li>
-    <li>Занятия спортом</li>
-    <li>Сноубрдинг</li>
-    <li>Чтение книг</li>
-    <li>Компьютерные игры</li>
-</ol>
-
-<h2>Опыт работы</h2>
-<table>
-    <thead>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>ПАО "МТС"</td>
-        <td>Консультант</td>
-        <td>2017 - 2018</td>
-    </tr>
-    <td>ООО "Связной"</td>
-    <td>Менеджер по продажам</td>
-    <td>2018 - 2019</td>
-    </tr>
-    <tr>
-        <td>ООО "ТЕХНОПАРК"</td>
-        <td>Мастер инноваций</td>
-        <td>2019 - по н.вр</td>
-    </tr>
-    </tbody>
-</table>
-
-<h2>Связаться со мной</h2>
-
-<form>
-    <div>
-         <label for="text">Ваше имя</label>
-        <input type="text" id="text" placeholder="Введите имя">
+    <a href="https://t.me/noclafsake" target="_blank">Telegram</a>
     </div>
-<br>
-    <div>
-       <label for="email">Ваш email</label>
-        <input type="email" id="email" placeholder="Введите email">
     </div>
-<br>
-    <div>
-       <label for="message">Ваше сообщение:</label>
-       <br>
-        <textarea type="message" cols="50" rows="10" placeholder="Введите сообщение"></textarea>
+    <div class="card bg-blue">
+    <h2 id="Хобби">Мои хобби</h2>
+
+    <ol class="hobby">
+        <li>Путешествия</li>
+        <li>Занятия спортом</li>
+        <li>Сноубрдинг</li>
+        <li>Чтение книг</li>
+        <li>Компьютерные игры</li>
+    </ol>
     </div>
-<br>
-    <div>
-        <input type="submit" value="Отправить">
+    <div class="card bg-orange">
+    <h2 id="Опыт работы">Опыт работы</h2>
+
+    <table class="expwork">
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>ПАО "МТС"</td>
+            <td>Консультант</td>
+            <td>2017 - 2018</td>
+        </tr>
+        <td>ООО "Связной"</td>
+        <td>Менеджер по продажам</td>
+        <td>2018 - 2019</td>
+        </tr>
+        <tr>
+            <td>ООО "ТЕХНОПАРК"</td>
+            <td>Мастер инноваций</td>
+            <td>2019 - по н.вр</td>
+        </tr>
+        </tbody>
+    </table>
     </div>
+    
+    <div class="card bg-green">
+        <h2 id="Мое образование">Мое образование</h2>
+
+        <ul class="education">
+            <li>Неполное высшее медицинское образование в КГМУ</li>
+            <li>Высшее энергетическое образование в КГЭУ</li>
+        </ul>
+    </div>
+
+    <h2>Связаться со мной</h2>
+
+    <form class="form">
+        <h2 id="Способы связи">Связаться со мной</h2>
+
+        <div class="form-row">
+        
+            <div class="form-group">
+                <label for="text">Ваше имя</label>
+
+                <input type="text" id="text" placeholder="Введите имя">
+            </div>
+  
+            <div class="form-group">
+                <label for="email">Ваш email</label>
+
+                <input type="email" id="email" placeholder="Введите email">
+
+            </div>
+        </div>
+   
+            <div class="form-group">
+
+                <label for="message">Ваше сообщение:</label>
+        
+                <textarea id="message" cols="50" rows="10" placeholder="Введите сообщение"></textarea>
+            </div>
+   
+        <div>
+
+            <input type="submit" value="Отправить" class="btn">
+
+        </div>
+</div>
 </form>
 </body>
 </html>
